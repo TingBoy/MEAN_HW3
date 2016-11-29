@@ -16,14 +16,14 @@ app.get('/resume/', function (req, res) {
 	});
 	
 });
-
+/*
 app.post('/resume/', function (req, res) {
 	console.log(req.body);
 	db.resume.insert(req.body, function (err, doc) {
 		res.json(doc);
 	});
 });
- /*
+
 app.delete('/resume/:id', function(req, res) {
 	var id = req.params.id;
 	console.log(id);
