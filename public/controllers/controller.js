@@ -5,8 +5,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 	var refresh = function() {
 		$http.get('/resume/').success(function (response) {
 			console.log("I got the data I requested");
-			$scope.schools = response;
-			$scope.school = "";
+			$scope.resume = response;
 		});
 	};
 	
