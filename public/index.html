@@ -22,7 +22,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="school in schools | filter:{'type':'edu'}">
+				<tr ng-repeat="school in resume | filter:{'type':'edu'}">
 					<td>{{school.name}}</td>
 					<td>{{school.degree}}</td>
 					<td>{{school.year}}</td>
@@ -37,7 +37,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="skill in skills | filter:{'type':'skill'}">
+				<tr ng-repeat="skill in resume | filter:{'type':'skill'}">
 					<td>{{skill.skill}}</td>
 				</tr>
 			</tbody>
@@ -51,7 +51,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="project in projects | filter:{'type':'project'}">
+				<tr ng-repeat="project in resume | filter:{'type':'project'}">
 					<td>{{project.title}}</td>
 					<td>{{project.description}}</td>
 				</tr>
