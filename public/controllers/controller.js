@@ -6,6 +6,7 @@ myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 		$http.get('/resume/').success(function (response) {
 			console.log("I got the data I requested");
 			$scope.resume = response;
+			$scope.resume = "";
 		});
 	};
 	
