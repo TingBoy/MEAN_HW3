@@ -22,7 +22,7 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="school in schools">
+				<tr ng-repeat="school in schools | filter:{'type':'edu'}">
 					<td>{{school.name}}</td>
 					<td>{{school.degree}}</td>
 					<td>{{school.year}}</td>
