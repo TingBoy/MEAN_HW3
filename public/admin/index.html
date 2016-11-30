@@ -85,7 +85,7 @@
 							<td>{{school.name}}</td>
 							<td>{{school.degree}}</td>
 							<td>{{school.year}}</td>
-							<td><button class="btn btn-danger" ng-click="remove(school._id)">Remove</button></td>
+							<td align="right"><button class="btn btn-danger" ng-click="remove(school._id)">Remove</button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -100,7 +100,7 @@
 					<tbody>
 						<tr ng-repeat="skill in skills | filter:{'type':'skill'}">
 							<td>{{skill.skill}}</td>
-							<td><button class="btn btn-danger" ng-click="remove(skill._id)">Remove</button></td>
+							<td align="right"><button class="btn btn-danger" ng-click="remove(skill._id)">Remove</button></td>
 						</tr>
 					</tbody>
 				</table>
@@ -117,7 +117,7 @@
 						<tr ng-repeat="project in projects | filter:{'type':'project'}">
 							<td>{{project.title}}</td>
 							<td>{{project.description}}</td>
-							<td><button class="btn btn-danger" ng-click="remove(project._id)">Remove</button></td>
+							<td align="right"><button class="btn btn-danger" ng-click="remove(project._id)">Remove</button></td>
 						</tr>
 					</tbody>
 				</table>
