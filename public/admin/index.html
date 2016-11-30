@@ -34,7 +34,7 @@
 						<tr>
 							<td><input class="form-control" ng-model="school.name"></td>
 							<td><input class="form-control" ng-model="school.degree"></td>
-							<td><input class="form-control" ng-model="school.year"></td>
+							<td><input class="form-control" ng-model="school.last_year"></td>
 							<td align="right"><button class="btn btn-primary" ng-click="addSchool()">Add School</button></td>
 					</tbody>
 				</table>
@@ -84,7 +84,7 @@
 						<tr ng-repeat="school in schools | filter:{'type':'edu'}">
 							<td>{{school.name}}</td>
 							<td>{{school.degree}}</td>
-							<td>{{school.year}}</td>
+							<td>{{school.last_year}}</td>
 							<td align="right"><button class="btn btn-danger" ng-click="remove(school._id)">Remove</button></td>
 						</tr>
 					</tbody>
