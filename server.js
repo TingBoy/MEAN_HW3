@@ -4,7 +4,8 @@ var mongojs = require('mongojs');
 var db = mongojs('resume', ['resume']);
 var bodyParser = require('body-parser');
 
-app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/public/'));
+app.use(express.static(__dirname + '/public/admin/'));
 app.use(bodyParser.json());
 
 app.get('/resume/', function (req, res) {
@@ -16,7 +17,7 @@ app.get('/resume/', function (req, res) {
 	});
 	
 });
-/*
+
 app.post('/resume/', function (req, res) {
 	console.log(req.body);
 	db.resume.insert(req.body, function (err, doc) {
@@ -24,6 +25,7 @@ app.post('/resume/', function (req, res) {
 	});
 });
 
+	
 app.delete('/resume/:id', function(req, res) {
 	var id = req.params.id;
 	console.log(id);
@@ -49,7 +51,7 @@ app.put('/resume/:id', function (req, res) {
 		res.json(doc);
 	});
 });
-*/
+
 
 app.listen(8080);
 console.log("Server running on port 8080");
