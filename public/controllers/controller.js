@@ -2,15 +2,34 @@ var myApp = angular.module('myApp', []);
 myApp.controller('AppCtrl', ['$scope', '$http', function($scope, $http) {
 	console.log("Hello World from controller");
 	
-	var refresh = function() {
+	var refresh1 = function() {
 		$http.get('/resume/').success(function (response) {
 			console.log("I got the data I requested");
-			$scope.resume = response;
-			$scope.resume = "";
+			$scope.schools = response;
+			$scope.school = "";
 		});
 	};
 	
-	refresh();
+	var refresh2 = function() {
+		$http.get('/resume/').success(function (response) {
+			console.log("I got the data I requested");
+			$scope.skills = response;
+			$scope.skill = "";
+		});
+	};
+	
+	var refresh3 = function() {
+		$http.get('/resume/').success(function (response) {
+			console.log("I got the data I requested");
+			$scope.projects = response;
+			$scope.project = "";
+		});
+	};
+	
+	refresh1();
+	refresh2();
+	refresh3();
+	
 	/*
 	$scope.addContact = function() {
 		console.log($scope.contact);
