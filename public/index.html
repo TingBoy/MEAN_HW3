@@ -8,7 +8,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 <title>About Me</title>
 <style>
-	p, h2, h3, th { color: #ffffff; }
+	p, h2, h3, th, td{ color: #ffffff; }
+	body { background: #aaaaaa; }
+	.eq { display: flex; }
 </style>
 </head>
 <body>
@@ -17,15 +19,16 @@
 			<div class = "well">
 				<h1>About Me</h1>
 			</div>
-			
-			<div class = "col-sm-4 well" style="padding-bottom:500em; margin-bottom:-500em; background: #1abc9c;">
+		</div>
+		<div class="row eq">
+			<div class = "col-sm-4 well" style="background: #1abc9c;">
 				<h2>Albert Ting</h2>
 				<p>Gamer, Avid Snowboarder, and CS graduate (hopefully)</p>
 				<p>ating3@calstatela.edu</p>
 				<p>(555)555-5555</p>
 			</div>
 			
-			<div class = "col-sm-8 well" style="padding-bottom:500em; margin-bottom:-500em; background: #1abc9c;">
+			<div class = "col-sm-8 well" style="flex: 1; background: #1abc9c;">
 				<h3>Education</h3>
 				<table class="table">
 					<thead>
